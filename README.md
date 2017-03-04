@@ -12,7 +12,7 @@ re-run the third element (first is `r`, second is `shell`).
 
 Simply add the following to your sbt configuration:
 
-``scala
+```scala
 resolvers += Resolver.bintrayIvyRepo("duhemm", "sbt-plugins")
 addSbtPlugin("org.duhemm" % "sbt-redo" % "0.1.0")
 ```
