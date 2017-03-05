@@ -16,7 +16,7 @@ Simply add the following to your sbt configuration:
 
 ```scala
 resolvers += Resolver.bintrayIvyRepo("duhemm", "sbt-plugins")
-addSbtPlugin("org.duhemm" % "sbt-redo" % "0.1.0")
+addSbtPlugin("org.duhemm" % "sbt-redo" % "0.2.0")
 ```
 
 ## Development
@@ -29,4 +29,4 @@ $ sbt publishLocal
 ```
 
 Add the following to your sbt configuration:
-addSbtPlugin("org.duhemm" % "sbt-redo" % "0.2.0-SNAPSHOT")
+addSbtPlugin("org.duhemm" % "sbt-redo" % "0.3.0-SNAPSHOT")
