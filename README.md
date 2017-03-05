@@ -29,4 +29,7 @@ $ sbt publishLocal
 ```
 
 Add the following to your sbt configuration:
+
+```scala
 addSbtPlugin("org.duhemm" % "sbt-redo" % "0.3.0-SNAPSHOT")
+```
