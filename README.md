@@ -2,11 +2,11 @@
 
 A very simple plugin that adds a new command to your build, `r`.
 
-This command can be used to re-run the last command, instead of using the up arrow key
+This command can be used to re-run the line that was typed, instead of using the up arrow key
 which is too far and too small.
 
-It's definitely not a bullet-proof solution, since it will just inspect sbt's history and
-re-run the third element (first is `r`, second is `shell`).
+It works by hijacking the sbt shell and replacing it by one that will remember what was the
+last typed command, so that it can be re-run if you simply enter `r`.
 
 # Installation
 
