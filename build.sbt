@@ -1,6 +1,6 @@
 lazy val redo = project.in(file("."))
 
-version := "0.2.0-SNAPSHOT"
+version := "0.2.0"
 sbtPlugin := true
 organization := "org.duhemm"
 name := "sbt-redo"
