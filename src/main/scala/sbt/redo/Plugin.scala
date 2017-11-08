@@ -34,8 +34,8 @@ object Plugin extends AutoPlugin {
       def run(cmd: String): State = {
         val newState = s
           .copy(
-            onFailure = Some(BasicCommandStrings.Shell),
-            remainingCommands = cmd +: BasicCommandStrings.Shell +: s.remainingCommands)
+            onFailure = Some(Compat.toExec(BasicCommandStrings.Shell)),
+            remainingCommands = Compat.toExec(cmd) +: Compat.toExec(BasicCommandStrings.Shell) +: s.remainingCommands)
           .setInteractive(true)
         if (cmd.trim.isEmpty) newState else newState.clearGlobalLog
       }
