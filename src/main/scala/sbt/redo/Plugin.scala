@@ -44,7 +44,7 @@ object Plugin extends AutoPlugin {
         case (Some("r"), Some(line)) =>
           run(line)
         case (Some(line), _) =>
-          previous = Some(line)
+          if (line.nonEmpty) previous = Some(line)
           run(line)
         case (None, _) =>
           s.setInteractive(false)
