@@ -15,7 +15,6 @@ last typed command, so that it can be re-run if you simply enter `r`.
 Simply add the following to your sbt configuration:
 
 ```scala
-resolvers += Resolver.bintrayIvyRepo("duhemm", "sbt-plugins")
 addSbtPlugin("org.duhemm" % "sbt-redo" % "0.3.0")
 ```
 
